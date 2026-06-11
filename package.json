@@ -1,0 +1,26 @@
+{
+  "name": "@elenixu/employee-success-modal",
+  "version": "1.0.0",
+  "main": "./dist/employee-success-modal.mjs",
+  "module": "./dist/employee-success-modal.mjs",
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "scripts": {
+    "build": "vite build"
+  },
+  "peerDependencies": {
+    "@emotion/react": ">=11.0.0",
+    "@emotion/styled": ">=11.0.0",
+    "@mui/material": ">=7.0.0",
+    "react": ">=18.0.0",
+    "react-dom": ">=18.0.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^6.0.2",
+    "vite": "^8.0.16"
+  }
+}

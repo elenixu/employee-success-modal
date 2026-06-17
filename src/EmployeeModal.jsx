@@ -6,7 +6,7 @@ import {
   Box,
 } from "@mui/material";
 
-function EmployeeModal({ open, onClose, onConfirm }) {
+function EmployeeModal({ open, onClose, onConfirm, title = "Success", message = "", closeText = "Close", confirmText = "Confirm", }) {
   return (
     <Modal open={open} onClose={onClose}>
       <Paper
@@ -22,20 +22,20 @@ function EmployeeModal({ open, onClose, onConfirm }) {
         }}
       >
         <Typography variant="h5" gutterBottom>
-          Employee Created!
+          {title}
         </Typography>
 
         <Typography sx={{ mb: 3 }}>
-          The employee has been added successfully.
+          {message}
         </Typography>
 
         <Box sx={{ display: "flex", justifyContent: "center", gap: 2 }}>
           <Button variant="outlined" onClick={onClose}>
-            Close
+            {closeText}
           </Button>
 
           <Button variant="contained" onClick={onConfirm}>
-            View Employees
+            {confirmText}
           </Button>
         </Box>
       </Paper>
